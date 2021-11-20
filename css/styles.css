@@ -16,7 +16,7 @@
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
-    --h1-font-size: 1.5rem;
+    --h1-font-size: 1.25rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
@@ -39,8 +39,8 @@
 
 @media screen and (min-width: 968px) {
      :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
+        --big-font-size: 2.25rem;
+        --h1-font-size: 2rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
@@ -166,6 +166,8 @@ img {
 .nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
+    max-width: 200px;
+    align-self: center;
 }
 
 .nav__logo:hover {
@@ -257,7 +259,7 @@ img {
 
 .home__content {
     grid-template-columns: .5fr 3fr;
-    padding-top: 3.5rem;
+    padding-top: 2rem;
     align-items: center;
 }
 
@@ -277,8 +279,9 @@ img {
 }
 
 .home__blob {
-    width: 200px;
+    width: 250px;
     fill: var(--first-color);
+    border-radius: .5rem;
 }
 
 .home__blob-img {
@@ -310,7 +313,7 @@ img {
 
 .home__scroll-button {
     color: var(--first-color);
-    transition: .3s
+    transition: .3s;
 }
 
 .home__scroll-button:hover {
@@ -321,7 +324,7 @@ img {
     font-size: 2rem;
 }
 
-.home__Scroll-name {
+.home__scroll-name {
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
@@ -485,48 +488,165 @@ img {
     background-color: var(--first-color);
 }
 
-.skills__html {
-    width: 90%;
-}
-
-.skills__css {
+.skills__java {
     width: 80%;
 }
 
-.skills__js {
-    width: 60%;
-}
-
-.skills__react {
-    width: 85%;
-}
-
-.skills__php {
+.skills__py3 {
     width: 80%;
 }
 
-.skills__node {
+.skills__ts {
+    width: 75%;
+}
+
+.skills__powerbi {
+    width: 55%;
+}
+
+.skills__web {
     width: 70%;
 }
 
-.skills__firebase {
+.skills__sql,
+.skills__mysql {
+    width: 85%;
+}
+
+.skills__Eclipse {
     width: 90%;
 }
 
-.skills__python {
-    width: 85%;
+.skills__vscode {
+    width: 70%;
 }
 
-.skills__figma {
+.skills__pycharm {
+    width: 75%;
+}
+
+.skills__git {
+    width: 80%;
+}
+
+.skills__blaze {
+    width: 60%;
+}
+
+.skills__jmeter {
+    width: 75%;
+}
+
+.skills__soapui {
+    width: 75%;
+}
+
+.skills__postman {
+    width: 80%;
+}
+
+.skills__playwright {
+    width: 80%;
+}
+
+.skills__selenium {
+    width: 95%;
+}
+
+.skills__hp {
+    width: 75%;
+}
+
+.skills__pytest {
+    width: 80%;
+}
+
+.skills__aa {
+    width: 70%;
+}
+
+.skills__cucumber {
     width: 90%;
 }
 
-.skills__sketch {
+.skills__bdd {
+    width: 90%;
+}
+
+.skills__tdd {
+    width: 90%;
+}
+
+.skills__hybrid {
+    width: 90%;
+}
+
+.skills__crm {
+    width: 90%;
+}
+
+.skills__aws {
     width: 85%;
 }
 
-.skills__photoshop {
+.skills__genesys {
     width: 85%;
+}
+
+.skills__verint {
+    width: 85%;
+}
+
+.skills__ssis {
+    width: 80%;
+}
+
+.skills__ssrs {
+    width: 80%;
+}
+
+.skills__ccp {
+    width: 80%;
+}
+
+.skills__neo {
+    width: 80%;
+}
+
+.skills__swagger {
+    width: 85%;
+}
+
+.skills__pivotal {
+    width: 70%;
+}
+
+.skills__agile {
+    width: 90%;
+}
+
+.skills__jira {
+    width: 95%;
+}
+
+.skills__jenkins {
+    width: 80%;
+}
+
+.skills__awsdev {
+    width: 85%;
+}
+
+.skills__hpalm {
+    width: 85%;
+}
+
+.skills__testplan {
+    width: 95%;
+}
+
+.skills__testdesign {
+    width: 100%;
 }
 
 .skills__close .skills__list {
@@ -540,7 +660,7 @@ img {
 }
 
 .skills__open .skills__arrow {
-    transform: rotate(-180deg)
+    transform: rotate(-180deg);
 }
 
 .qualification__tabs {
@@ -583,7 +703,7 @@ img {
 
 .qualification__calendar {
     font-size: var(--smaller-font-size);
-    color: var(--text-color-light)
+    color: var(--text-color-light);
 }
 
 .qualification__rounder {
@@ -914,7 +1034,7 @@ img {
 }
 
 .footer__link:hover {
-    color: var(--first-color-lighter)
+    color: var(--first-color-lighter);
 }
 
 .footer__social {
@@ -1099,14 +1219,10 @@ img {
         margin: 0;
     }
     .home__container {
-        row-gap: 5rem;
+        row-gap: 2rem;
     }
     .home__content {
-        padding-top: 5.5rem;
-        column-gap: 2rem;
-    }
-    .home__content {
-        padding-top: 5.5rem;
+        padding-top: 4rem;
         column-gap: 2rem;
     }
     .home__blob {

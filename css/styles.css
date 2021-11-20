@@ -1256,7 +1256,11 @@ img {
         margin: 0 var(--mb-1);
     }
     .qualification__sections {
-        grid-template-columns: .5fr;
+        grid-template-columns: .8fr;
+        text-align: right;
+    }
+    .qualification__section-left {
+        text-align: left;
     }
     .services__container {
         grid-template-columns: repeat(3, 218px);

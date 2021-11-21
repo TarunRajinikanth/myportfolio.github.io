@@ -187,4 +187,11 @@ nextStep.addEventListener('click', function(e) {
 
     // Show thank you message element
     document.getElementById('thank_you').style.display = 'block';
-});
+})
+
+var type = new Typed(".auto-input", {
+    strings: ["Tarun Patnala", "Automation Tester", "Functional Tester", "Web Designer"],
+    typespeed: 100,
+    backspeed: 100,
+    loop: true,
+})

@@ -177,20 +177,8 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-
-var nextStep = document.querySelector('#nextStep');
-
-nextStep.addEventListener('click', function(e) {
-    e.preventDefault();
-    // Hide first view
-    document.getElementById('my_form').style.display = 'none';
-
-    // Show thank you message element
-    document.getElementById('thank_you').style.display = 'block';
-})
-
 var type = new type(".auto-input", {
-    strings: ["Tarun Patnala", "Automation Tester", "Functional Tester", "Web Designer"],
+    strings: ["Tarun Patnala", "Automation Tester", "Functional Tester", "Database Tester"],
     typespeed: 100,
     backspeed: 100,
     loop: true,

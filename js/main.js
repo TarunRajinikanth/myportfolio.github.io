@@ -121,10 +121,10 @@ function scrollActive() {
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+        sections = current.getAttribute('id')
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.nav__menu a[href*=' + sections + ']').classList.add('active-link')
         } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
@@ -189,9 +189,42 @@ nextStep.addEventListener('click', function(e) {
     document.getElementById('thank_you').style.display = 'block';
 })
 
-var type = new Typed(".auto-input", {
+var type = new type(".auto-input", {
     strings: ["Tarun Patnala", "Automation Tester", "Functional Tester", "Web Designer"],
     typespeed: 100,
     backspeed: 100,
     loop: true,
 })
+
+function sendmail() {
+
+    var name = $('#Name').val();
+    var email = $('#Email').val();
+    var subject = $('#Subject').val();
+    var message = $('#Message').val();
+
+    var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
+
+    Email.send({
+        SecureToken: "9d1ef4e1-dc6b-4103-86cf-2d5861eb550a",
+        To: "tarunpatnala@gmail.com",
+        From: "tarunpatnala@gmail.com",
+        Subject: "New message on contact from " + name,
+        Body: Body
+    }).then(
+        message => {
+            console.log(message);
+            if (message == 'OK') {
+                alert('Your mail has been send. Thank you for connecting.');
+            } else {
+                console.error(message);
+                alert('There is error at sending message. ')
+
+            }
+
+        }
+    );
+
+
+
+}

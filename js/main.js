@@ -206,7 +206,7 @@ function sendmail() {
     var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
 
     Email.send({
-        SecureToken: "9d1ef4e1-dc6b-4103-86cf-2d5861eb550a",
+        SecureToken: "bbc490f0-cbc2-4409-a486-0def6e9e45d9",
         To: "tarunpatnala@gmail.com",
         From: "tarunpatnala@gmail.com",
         Subject: "New message on contact from " + name,

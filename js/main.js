@@ -206,7 +206,9 @@ function sendmail() {
     var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
 
     Email.send({
-        SecureToken: "bbc490f0-cbc2-4409-a486-0def6e9e45d9",
+        Host: "smtp.elasticemail.com",
+        Username: "tarunpatnala@gmail.com",
+        Password: "72E2456598FBEE085B8FA04082F23176C7C4",
         To: "tarunpatnala@gmail.com",
         From: "tarunpatnala@gmail.com",
         Subject: "New message on contact from " + name,

@@ -194,7 +194,7 @@ function sendmail() {
     var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
 
     Email.send({
-        Host: "smtp.elasticemail.com",
+        Host: "smtp.gmail.com",
         Username: "tarunpatnala@gmail.com",
         Password: "72E2456598FBEE085B8FA04082F23176C7C4",
         To: "tarunpatnala@gmail.com",

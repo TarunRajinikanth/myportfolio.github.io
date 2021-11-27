@@ -177,11 +177,12 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-var type = new type(".auto-input", {
-    strings: ["Tarun Patnala", "Automation Tester", "Functional Tester", "Database Tester"],
+var typed = new Typed(".auto-input", {
+    strings: ["Tarun Patnala", "Automation Tester", "Functional Tester", "ETL Tester", "API Tester"],
     typespeed: 100,
     backspeed: 100,
-    loop: true,
+    fadeout: true,
+    loop: true
 })
 
 function sendmail() {
